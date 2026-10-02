@@ -28,23 +28,23 @@ TrafficLight::TrafficLight(QWidget * parent): QWidget(parent) {
 
     setLayout(layout);
 
-    void TrafficLight::light_update()
-    {
-        switch (counter++ % 3)
-        {
-        case 0:
-            greenlight->toggle();
-            break;
-        case 1:
-            yellowlight->toggle();
-            break;
-        case 2:
-            redlight->toggle();
-            break;
-
-        }
-    }
 }
 
+void TrafficLight::light_update()
+{
+    switch (counter++ % 3)
+    {
+    case 0:
+        greenlight->toggle();
+        break;
+    case 1:
+        yellowlight->toggle();
+        break;
+    case 2:
+        redlight->toggle();
+        break;
+
+    }
+}
 
 // TO DO: build the light_update() slot function here
